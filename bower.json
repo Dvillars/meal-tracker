@@ -1,0 +1,17 @@
+{
+  "name": "meal-tracker",
+  "description": "a friday project",
+  "main": "",
+  "authors": [
+    "Derek Villars"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
