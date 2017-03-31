@@ -4,6 +4,7 @@ var Meal = (function () {
         this.name = name;
         this.details = details;
         this.calories = calories;
+        this.currentSelect = false;
     }
     ;
     return Meal;

@@ -1,0 +1,17 @@
+<div *ngIf='selectedMeal'>
+  <edit-meal [meal]="selectedMeal" (doneClick)="done($event);">loading...</edit-meal>
+</div>
+<select class="btn btn-success" (change)="onChange($event.target.value)">
+  <option value="allMeals">All Meals</option>
+  <option value="lowMeals">Low Calorie Meals</option>
+  <option value="highMeals">High Calorie Meals</option>
+</select>
+<div *ngFor="let meal of meals | servable:filterByCalories">
+  <div [class]="checkStatus(meal)" (click)="selectMeal(meal)">
+    <div class="border">
+    <h2>The Culprit -> {{meal.name}}</h2>
+    <h3>details: {{meal.details}}</h3>
+    <h3>calories = {{meal.calories}}</h3>
+    </div>
+  </div>
+</div>

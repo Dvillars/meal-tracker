@@ -1,0 +1,10 @@
+<button class="btn btn-success" (click)="showNewForm = !showNewForm">{{showNewForm ? "Cancel" : "New Meal"}}</button>
+<div *ngIf='showNewForm'>
+  <form>
+    <input type="text" placeholder='Name:' #newName>
+    <input type="text" placeholder='Details:' #newDetails>
+    <input type="number" placeholder='Calories:' #newCalories>
+    <br>
+    <button class="btn btn-success" (click)="submitForm(newName.value, newDetails.value, newCalories.value); showNewForm = !showNewForm">Log new meal</button>
+  </form>
+</div>

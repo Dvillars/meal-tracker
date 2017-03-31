@@ -11,6 +11,7 @@ import { MEALS } from './models/mock-meals';
 export class AppComponent{
   masterMealList: Meal[] = MEALS;
 
-
-
+  addMeal(meal) {
+    this.masterMealList.push(meal);
+  }
 }

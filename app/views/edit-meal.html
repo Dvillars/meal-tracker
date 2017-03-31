@@ -1,0 +1,6 @@
+  <button class='btn btn-success' (click)="EditForm = !EditForm">{{EditForm ? 'Save' : 'Edit'}}</button>
+  <div *ngIf="EditForm">
+    <input [(ngModel)]='meal.name' type='text' placeholder='Brand:'>
+    <input [(ngModel)]='meal.details' type='text' placeholder='Details:'>
+    <input [(ngModel)]='meal.calories' type='number' placeholder='Calories:'>
+  </div>
