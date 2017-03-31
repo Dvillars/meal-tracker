@@ -1,0 +1,22 @@
+.border {
+  border: 2px solid green;
+  margin-top: 15px;
+}
+
+hr {
+    border: 3px solid green;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.title {
+  margin-bottom: 0px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 1%;
+  border: 3px solid green;
+  border-top-left-radius: 15px;
+  h1 {
+    margin: 0px;
+  }
+}

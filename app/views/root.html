@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="title">
+    <h1>Hiya its yo' Om Nom log</h1>
+  </div>
+  <hr>
+  <div class="nav">
+    things go here
+  </div>
+  <div class="row">
+    <hr>
+    <div *ngFor="let meal of masterMealList">
+      <div class="border">
+        <h2>name: {{meal.name}}</h2>
+        <h3>details: {{meal.details}}</h3>
+        <h3>calories: {{meal.calories}}</h3>
+      </div>
+    </div>
+
+  </div>
+</div>
